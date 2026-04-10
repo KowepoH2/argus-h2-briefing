@@ -1,0 +1,13 @@
+# 관리자 전용 파일 — GitHub에 올리지 마세요
+admin.html
+
+# 레퍼런스 템플릿 (선택적)
+hydrogen_daily_v2.html
+hydrogen_archive_v2.html
+
+# Google Apps Script 소스 (선택적)
+apps_script_v2.js
+
+# OS 파일
+.DS_Store
+Thumbs.db
