@@ -1,6 +1,12 @@
 # 관리자 전용 파일 — GitHub에 올리지 마세요
 admin.html
 
+# 보안: 토큰 및 자동화 스크립트
+.gh_token
+자동_깃헙_push.py
+깃헙_push.bat
+push_log.txt
+
 # 레퍼런스 템플릿 (선택적)
 hydrogen_daily_v2.html
 hydrogen_archive_v2.html
