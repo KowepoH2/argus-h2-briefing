@@ -108,7 +108,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Malgun Gothic',san
   <div id="archive" class="panel active">
     <div class="archive-grid">
       <div>
-        <div class="month-label">2026년 3-4월</div>
+        <div class="month-label">2026년 4월</div>
         <div class="date-list" id="dateList"></div>
       </div>
       <div id="previewCol"><div class="empty-msg">← 날짜를 선택하세요</div></div>
@@ -148,6 +148,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Malgun Gothic',san
 <script>
 const briefs = [
   { date:'2026-04-09', label:'4월 9일', day:'목', hot:true, tags:'공급위기 · 드론공격 · 가격급등',
+    ocrUrl:'https://docs.google.com/document/d/1qAJzKWmgCxT4CgnideoV5S9cdpau2NetChDOOXdvZK0/edit',
     prices:{me:700,ea:725,nwe:830,usg:775,jklab:686.74}, chg:{me:'+10',ea:'+25',nwe:'+20',usg:'nc'},
     issues:[
       {type:'hot', text:'공급 위기 출구 없음 — 인도 +$50, 동아시아 +$25, NW유럽 +$20 일제 상승'},
@@ -157,6 +158,7 @@ const briefs = [
       {type:'pol', text:'인도네시아 Luwuk 5월 1개월 정기보수 — 동아시아 추가 공급 감소 예정'}
     ], monitor:'호르무즈 선주보험 기준 합의 / Sabic 피해 공식 확인 / 한국 5-6월 spot 조달 긴박화' },
   { date:'2026-04-08', label:'4월 8일', day:'수', hot:true, tags:'휴전 · 한국H2전략 · 암모니아혼소',
+    ocrUrl:'https://docs.google.com/document/d/1TNVfrxNs--xuZDBUqCJ6WysJivDRMEtzIWtvEIyRaa8/edit',
     prices:{me:690,ea:700,nwe:810,usg:775,jklab:686.74}, chg:{me:'nc',ea:'nc',nwe:'nc',usg:'nc'},
     issues:[
       {type:'hot', text:'미국-이란 2주 휴전 발표에도 호르무즈 통항 재개 없어 — MGC 3척 5주째 봉쇄'},
@@ -166,6 +168,7 @@ const briefs = [
       {type:'',    text:'[수소] 그리스, 2030년 도로 운송 RFNBO 1% 의무화 입법 추진'}
     ], monitor:'한국 청정수소발전 2차 입찰 재개 방향 / Reliance 재생암모니아 공급 현실성 / 인도 수요 동향' },
   { date:'2026-04-07', label:'4월 7일', day:'화', hot:true, tags:'주바일공격 · FACT입찰 · 공급봉쇄',
+    ocrUrl:'https://docs.google.com/document/d/1Re7ZgXRkupKD2T6bUZeY_H1x9tQtU5VbW8HbZbHmZcc/edit',
     prices:{me:690,ea:700,nwe:810,usg:775,jklab:686.74}, chg:{me:'+40',ea:'+50',nwe:'+45',usg:'+90'},
     issues:[
       {type:'hot', text:'사우디 주바일 산업단지 공격 — Sabic 암모니아 2.3mn t/yr 위협'},
@@ -174,60 +177,6 @@ const briefs = [
       {type:'',    text:'미국 걸프 암모니아 수출 재개 — GCA·Woodside 출하 시작'},
       {type:'pol', text:'동아시아 바이어들 5-6월 물량 확보 움직임 — 한국 포함'}
     ], monitor:'Sabic 피해 규모 확인 / 호르무즈 보험 기준 / 인도 DAP 보조금 / Luwuk 보수 일정' },
-  { date:'2026-03-24', label:'3월 24일', day:'화', hot:true, tags:'공급위기 · RFNBO · 인도최저가',
-    prices:{me:650,ea:600,nwe:765,usg:685,jklab:685.82}, chg:{me:'+50',ea:'nc',nwe:'nc',usg:'nc'},
-    issues:[
-      {type:'hot', text:'중동·호주 공급 위축 심화 — 호르무즈 통항 95% 급감'},
-      {type:'hot', text:'인도향 fresh offer $800/t 초과, 일부 $900/t 재발행 준비'},
-      {type:'pol', text:'EU RFNBO 기준 완화 추진 — 5개국 집행위 공동 서한'},
-      {type:'',    text:'인도 NRL 그린H2 역대 최저 $2.97/kg 낙찰 — NeuEN'},
-      {type:'',    text:'EU 수소은행 3차 경매 €8.4bn 요청, 평균 €1.80/kg'}
-    ], monitor:'중동 fob $650 급등 / RFNBO 3Q 결과 / 인도 기준가 함의 분석' },
-  { date:'2026-03-23', label:'3월 23일', day:'월', hot:true, tags:'공급위기 · 호르무즈',
-    prices:{me:600,ea:600,nwe:765,usg:685,jklab:683.00}, chg:{me:'nc',ea:'nc',nwe:'nc',usg:'nc'},
-    issues:[
-      {type:'hot', text:'호르무즈 통항 전쟁 前 대비 95% 감소 — Clarksons 확인'},
-      {type:'',    text:'이란·미국 긴장 완화 조짐, 실질적 물류 영향 미미'},
-      {type:'',    text:'사우디 Ma\'aden 공급 물량 내부 흡수 전환'},
-      {type:'',    text:'트리니다드·이집트 대체 공급 문의 급증, 프리미엄 형성'},
-      {type:'pol', text:'일본 METI 암모니아 혼소 2030년 20% 목표 재확인'}
-    ], monitor:'호르무즈 상황 지속 / 대체 공급처 단가 동향' },
-  { date:'2026-03-21', label:'3월 21일', day:'금', hot:false, tags:'EU수소은행 · 독일',
-    prices:{me:590,ea:580,nwe:755,usg:680,jklab:679.50}, chg:{me:'+15',ea:'+10',nwe:'+5',usg:'nc'},
-    issues:[
-      {type:'',    text:'EU 수소은행 3차 경매 결과 공개 — 총 €8.4bn 요청'},
-      {type:'pol', text:'독일 RFNBO 시행법안 의회 표결 또 연기'},
-      {type:'',    text:'Mol 헝가리 10MW PEM 파일럿 안정 운전 미달, FID 보류'},
-      {type:'',    text:'Nucera 인도 Juno Joule 260MW FEED 계약 체결'},
-      {type:'pol', text:'캐나다 CER 2050 청정H2 최대 10Mt/yr 전망 발표'}
-    ], monitor:'EU 입찰가 €1.80 상승세 분석 필요' },
-  { date:'2026-03-20', label:'3월 20일', day:'목', hot:false, tags:'Nucera · e-메탄올',
-    prices:{me:575,ea:570,nwe:750,usg:680,jklab:676.20}, chg:{me:'+10',ea:'+5',nwe:'nc',usg:'nc'},
-    issues:[
-      {type:'',    text:'Nucera 인도 260MW 알카라인 전해조 FEED 계약, FID 2027.09'},
-      {type:'',    text:'e-메탄올, 2030년 글로벌 e-연료 82% 점유 전망'},
-      {type:'pol', text:'호주 ARENA 그린암모니아 수출 프로젝트 2개 지원 선정'},
-      {type:'',    text:'Yara 핀란드 암모니아 설비 효율화 $120M 투자 계획'},
-      {type:'',    text:'한국가스공사 청정수소 도입 로드맵 수정안 검토 중'}
-    ], monitor:'아시아 그린H2 프로젝트 가속화 / 호주 수출 인프라' },
-  { date:'2026-03-19', label:'3월 19일', day:'수', hot:false, tags:'포르투갈 · 캐나다',
-    prices:{me:565,ea:565,nwe:745,usg:675,jklab:672.10}, chg:{me:'nc',ea:'nc',nwe:'nc',usg:'nc'},
-    issues:[
-      {type:'pol', text:'포르투갈 그린H2 2030 할당량 달성 자신 — 태양광 연계 증설'},
-      {type:'pol', text:'캐나다 CER 2050 청정H2 10Mt/yr 공식 발표'},
-      {type:'',    text:'CF Industries 미 걸프만 블루NH3 증설 검토 착수'},
-      {type:'',    text:'인도 NTPC 그린H2 발전 연계 100MW 입찰 공고'},
-      {type:'',    text:'싱가포르 EDB 저탄소 암모니아 수입 인증 초안 공개'}
-    ], monitor:'해외 정책 동향 — 장기 공급망 계획 참고' },
-  { date:'2026-03-18', label:'3월 18일', day:'화', hot:false, tags:'UK파이프라인 · e-SAF',
-    prices:{me:555,ea:560,nwe:740,usg:672,jklab:669.50}, chg:{me:'-5',ea:'nc',nwe:'+5',usg:'nc'},
-    issues:[
-      {type:'pol', text:'UK National Gas 300마일 H2 파이프망 구축 계획 공식 발표'},
-      {type:'',    text:'Technip Energies 노르망디 e-SAF 시설 지분 투자 참여'},
-      {type:'',    text:'중동 fob 소폭 하락 $555 — 계절적 수요 조정 영향'},
-      {type:'pol', text:'일본 경산성 청정암모니아 CfD 설계 공청회 개최'},
-      {type:'',    text:'Ørsted 덴마크 그린H2 1기 전해조 가동 완료 보고'}
-    ], monitor:'UK H2 인프라 — 유럽 공급망 장기 영향 / CfD 벤치마킹' }
 ];
 
 function chgClass(v){ return v.startsWith('+') ? 'up' : v==='nc' ? 'nc' : 'dn'; }
@@ -270,8 +219,8 @@ function renderPreview(b){
       </div>
       <div class="preview-footer">
         <div style="display:flex;gap:8px">
-          <a href="#" class="btn-src-sm">📄 원문 PDF</a>
-          <a href="#" class="btn-src-sm">📝 번역본</a>
+          <a href="https://drive.google.com/drive/folders/1JOUk34BldofDOoZJMqAO4pXajJ7EO5IM" target="_blank" class="btn-src-sm">📄 원문 PDF</a>
+          <a href="${b.ocrUrl||'#'}" target="_blank" class="btn-src-sm">📝 번역본</a>
         </div>
         <a href="briefs/${b.date.replace(/-/g,'')}.html" class="btn-view">전체 정리본 →</a>
       </div>
