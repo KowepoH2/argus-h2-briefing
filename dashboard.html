@@ -34,12 +34,29 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Malgun Gothic',san
 .panel{display:none}.panel.active{display:block}
 
 /* 아카이브 */
-.archive-grid{display:grid;grid-template-columns:220px 1fr;gap:16px}
+.archive-grid{display:grid;grid-template-columns:200px 1fr;gap:16px}
 .month-label{font-size:11px;font-weight:700;color:#888;letter-spacing:.07em;margin-bottom:10px}
 .date-list{display:flex;flex-direction:column;gap:5px}
 .date-item{padding:10px 12px;border-radius:8px;border:0.5px solid #e0e0e0;cursor:pointer;transition:all .15s;background:#fff}
 .date-item:hover{border-color:#85B7EB;background:#F0F7FF}
 .date-item.selected{border-color:#185FA5;background:#E6F1FB;box-shadow:0 1px 4px rgba(24,95,165,.1)}
+
+/* 모바일 반응형 */
+@media(max-width:640px){
+  .app{padding:12px 12px 40px}
+  .archive-grid{grid-template-columns:1fr;gap:10px}
+  .date-list{flex-direction:row;overflow-x:auto;padding-bottom:6px;gap:8px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .date-list::-webkit-scrollbar{display:none}
+  .date-item{min-width:130px;flex-shrink:0;padding:8px 10px}
+  .month-label{margin-bottom:6px}
+  .stat-grid{grid-template-columns:1fr 1fr}
+  .topbar-title{font-size:16px}
+  .topbar-count strong{font-size:16px}
+  .nav-btn{padding:7px 13px;font-size:12px}
+  .preview-footer{flex-direction:column;align-items:stretch;gap:6px}
+  .preview-footer>div{display:flex;gap:6px}
+  .btn-view{text-align:center}
+}
 .d-date{font-size:13px;font-weight:700;color:#0C447C}
 .d-tag{font-size:11px;color:#888;margin-top:2px;line-height:1.4}
 .d-badge{display:inline-block;font-size:10px;padding:1px 7px;border-radius:10px;background:#F0997B;color:#4A1B0C;margin-top:4px;font-weight:700}
@@ -92,7 +109,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Malgun Gothic',san
     <div>
       <div class="topbar-badge">ARGUS MEDIA · 아카이브</div>
       <div class="topbar-title">수소·암모니아 브리핑 아카이브</div>
-      <div class="topbar-sub">서부발전 수소사업팀 &nbsp;·&nbsp; Argus Media Daily</div>
+      <div class="topbar-sub">서부발전 수소사업실 &nbsp;·&nbsp; Argus Media Daily</div>
     </div>
     <div class="topbar-right">
       <div class="topbar-count">누적 <strong id="totalCount">0</strong>건</div>
@@ -220,7 +237,7 @@ function renderPreview(b){
       <div class="preview-footer">
         <div style="display:flex;gap:8px">
           <a href="https://drive.google.com/drive/folders/1JOUk34BldofDOoZJMqAO4pXajJ7EO5IM" target="_blank" class="btn-src-sm">📄 원문 PDF</a>
-          <a href="${b.ocrUrl||'#'}" target="_blank" class="btn-src-sm">📝 번역본</a>
+          <a href="https://drive.google.com/drive/folders/1Gw18D61S2DFNG1MVnvvBTIf9Yr7hLjFH" target="_blank" class="btn-src-sm">📝 번역본</a>
         </div>
         <a href="briefs/${b.date.replace(/-/g,'')}.html" class="btn-view">전체 정리본 →</a>
       </div>
